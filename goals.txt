@@ -1,0 +1,29 @@
+Server (Node/Express)
+
+Initialize a Node project, install express and cors
+Create server.js:
+
+Import express, cors, and fs
+Enable CORS middleware
+POST /battle — read existing battles.json, push the new battle object, write it back
+GET /battles — read and return battles.json
+Handle case where battles.json doesn't exist yet (start with empty array)
+Listen on a port (e.g. 3000)
+
+
+Create an initial empty battles.json with {"teams": []}
+
+Browser Script (content.js)
+
+Keep existing MutationObserver logic
+When "won the battle" is detected:
+
+Grab the team from .switchmenu
+Parse team text into an array of Pokémon names
+Determine win/loss
+Grab opponent name and rating info from the mutation nodes
+Build the battle object matching your JSON structure
+fetch POST it to http://localhost:3000/battle with the JSON body
+
+
+Optional: add a way to call GET /battles to view your history (console command, button, etc.)
