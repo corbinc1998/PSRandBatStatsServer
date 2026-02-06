@@ -1,20 +1,31 @@
-// https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/development_environment
 
-// Load HTTP module
-const http = require("http");
 
-const hostname = "127.0.0.1";
-const port = 3000;
+var express = require('express')
+var cors = require('cors')
+var app = express()
+const teams = require("./teams.json")
 
-// Create HTTP server and listen on port 3000 for requests
-const server = http.createServer((req, res) => {
-  // Set the response HTTP header with HTTP status and Content type
-  res.statusCode = 200;
-  res.setHeader("Content-Type", "text/plain");
-  res.end("Hello World\n");
-});
 
-// Listen for request on port 3000, and as a callback function have the port listened on logged
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+
+var corsOptions ={
+    origin: 'https://play.pokemonshowdown.com/',
+    optionSuccessStatus: 200
+}
+
+// Adds headers: access-control-allow-origin: *
+// app.use(cors())
+app.use(express.json())
+
+
+app.get('/teams', function(req, res, next)
+{       
+        const data = teams
+    
+        res.json(data)
+})
+
+
+app.listen(3000, function()
+{
+    console.log('web server loading on port 3000')
+})

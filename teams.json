@@ -1,0 +1,19 @@
+{
+    "teams": [
+        {
+            "pokemon": [
+                "Hitmonlee",
+                "Bombirdier",
+                "Gardevoir",
+                "Toxapex",
+                "Dragapult",
+                "Corviknight"
+            ],
+            "result": "win",
+            "rating": 1396,
+            "ratingChange": 23,
+            "opponent": "deslant",
+            "date": "2026-02-06"
+        }
+    ]
+}
