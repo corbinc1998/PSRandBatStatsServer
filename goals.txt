@@ -3,11 +3,11 @@ Server (Node/Express)
 [x] Create server.js:
 [x] Import express, cors, and fs
 [x] Enable CORS middleware
-[] POST /battle — read existing battles.json, push the new battle object, write it back
-[] GET /battles — read and return battles.json
-[] Handle case where battles.json doesn't exist yet (start with empty array)
+[x] POST /battle — read existing battles.json, push the new battle object, write it back
+[x] GET /battles — read and return battles.json
+[x] Handle case where battles.json doesn't exist yet (start with empty array)
 [x] Listen on a port (e.g. 3000)
-[] Create an initial empty battles.json with {"teams": []}
+[x] Create an initial empty battles.json with {"teams": []}
 Browser Script (content.js)
 [x] Keep existing MutationObserver logic
 [x] When "won the battle" is detected:
