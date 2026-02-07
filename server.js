@@ -37,18 +37,20 @@ app.get('/teams', function(req, res, next)
 app.post('/team', function(req, res, next)
 {      
         data = FileSystem.readFileSync("./teams.json", "utf-8")
+    // expected:
+        //  req.body =         {
+        //     "pokemon": [
+        //     ],
+        //     "result": "",
+        //     "rating": "",
+        //     "ratingChange": "",
+        //     "opponent": "",
+        //     "date": ""
+        // }
 
-        const newTeam =         {
-            "pokemon": [
-            ],
-            "result": "",
-            "rating": "",
-            "ratingChange": "",
-            "opponent": "",
-            "date": ""
-        }
+
         update = JSON.parse(data)
-        update.teams.push(newTeam)
+        update.teams.push(req.body)
         FileSystem.writeFileSync("./teams.json", JSON.stringify(update, null, 4))
 })
 
