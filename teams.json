@@ -2,18 +2,48 @@
     "teams": [
         {
             "pokemon": [
-                "Hitmonlee",
-                "Bombirdier",
-                "Gardevoir",
-                "Toxapex",
-                "Dragapult",
-                "Corviknight"
+                "Slaking",
+                "Delibird",
+                "Urshifu",
+                "Dunsparce",
+                "Hitmonchan",
+                "Bisharp"
             ],
-            "result": "win",
-            "rating": 1396,
-            "ratingChange": 23,
-            "opponent": "deslant",
-            "date": "2026-02-06"
+            "result": "loss",
+            "rating": 1329,
+            "ratingChange": -17,
+            "opponent": "FateGrand0rder",
+            "date": "2026-02-09"
+        },
+        {
+            "pokemon": [
+                "Bellibolt",
+                "Victreebel",
+                "Ting-Lu",
+                "Galvantula",
+                "Tatsugiri",
+                "Dugtrio"
+            ],
+            "result": "loss",
+            "rating": 1311,
+            "ratingChange": -18,
+            "opponent": "PotatoForDinner",
+            "date": "2026-02-09"
+        },
+        {
+            "pokemon": [
+                "Sinistcha",
+                "Garganacl",
+                "Trevenant",
+                "Oricorio",
+                "Dondozo",
+                "Girafarig"
+            ],
+            "result": "loss",
+            "rating": 1294,
+            "ratingChange": -17,
+            "opponent": "TheGoatJJ",
+            "date": "2026-02-09"
         }
     ]
 }

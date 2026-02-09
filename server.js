@@ -20,7 +20,7 @@ var corsOptions ={
 }
 
 // Adds headers: access-control-allow-origin: *
-// app.use(cors())
+app.use(cors())
 app.use(express.json())
 
 
