@@ -121,7 +121,6 @@
  app.post('/team', function(req, res, next)
  {      
          data = FileSystem.readFileSync("./teams.json", "utf-8")
-      
      // expected:
          //  req.body =         {
          //     "pokemon": [
@@ -135,7 +134,7 @@
  
  
          update = JSON.parse(data)
-       
+         update.teams.push(req.body)
          FileSystem.writeFileSync("./teams.json", JSON.stringify(update, null, 4))
  })
  
